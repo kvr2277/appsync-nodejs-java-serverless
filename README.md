@@ -99,16 +99,9 @@ query listBooks {
 ```
 
 
-Further Works:
+ToDo:
 
-Establish subscriptions
-```
-https://blog.postman.com/postman-supports-websocket-apis/
-
-
-Create lambda based graphql
-```
-
-https://github.com/michalkvasnicak/aws-lambda-graphql/tree/master/packages/chat-example-server
-https://github.com/michalkvasnicak/aws-lambda-graphql
-
+-- Establish subscriptions
+-- Postman websockets - https://blog.postman.com/postman-supports-websocket-apis/
+-- Create lambda based graphql (https://github.com/michalkvasnicak/aws-lambda-graphql/tree/master/packages/chat-example-server,
+https://github.com/michalkvasnicak/aws-lambda-graphql)
