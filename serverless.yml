@@ -1,4 +1,4 @@
-service: sls-appsync-test
+service: appsync-graphql-nodejs-serverless
 
 
 plugins:
@@ -6,6 +6,7 @@ plugins:
   - serverless-appsync-plugin
   - serverless-appsync-offline
   - serverless-offline
+  - serverless-prune-plugin
 
 
 provider:
@@ -27,6 +28,7 @@ provider:
     STAGE: "${self:provider.stage}"
     APPSYNC_NAME: "${self:custom.defaultPrefix}-appsync"
     BOOK_TABLE_NAME: "${self:custom.defaultPrefix}-book"
+    PRUNE_VERSIONS_TO_KEEP: 3
 
 custom:
   dynamodb:
@@ -50,6 +52,10 @@ custom:
         endpoint: "http://localhost:8000"
         region: localhost
   defaultPrefix: ${self:service}-${self:provider.stage}
+  prune:
+    automatic: true
+    includeLayers: true
+    number: ${self:provider.environment.PRUNE_VERSIONS_TO_KEEP}
 
 
 layers:
