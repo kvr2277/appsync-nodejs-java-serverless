@@ -15,8 +15,6 @@ public class AppSyncClientHelper {
     static String API_KEY_HEADER = "x-api-key";
 
     public static WebClient.ResponseSpec getResponseBodySpec(Map<String, Object> requestBody) {
-
-        System.out.println("****  requestBody  "+requestBody.toString());
         return WebClient
                 .builder()
                 .baseUrl(apiUrl)

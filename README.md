@@ -1,10 +1,10 @@
 
-# appsync-graphql-nodejs-serverless
-Nodejs based Serverless Appsync implementation of GraphQL
+# appsync-nodejs-java-serverless
+
+Read more about setup at https://vin0d.medium.com/serverless-graphql-with-appsync-java-and-nodejs-clients-aa0914c089c8
 
 
-git remote add origin https://github.com/kvr2277/appsync-graphql-nodejs-serverless.git
-git@github.com:kvr2277/appsync-graphql-nodejs-serverless.git
+--
 
 This is an ongoing exploration of implementing GraphQL with Serverless Appsync
 
@@ -40,7 +40,7 @@ x-api-key:SOME_KEY
 body - graphql
 mutation createBook {
     createBook(input: {
-        title: "Fifth Created Book"
+        title: "First Created Book"
     }) {
         id
         title

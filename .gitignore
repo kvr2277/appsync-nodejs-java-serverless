@@ -4,4 +4,7 @@ node_modules
 .DS_Store
 java_client/target
 .settings
+.vscode
+.classpath
+.project
 
