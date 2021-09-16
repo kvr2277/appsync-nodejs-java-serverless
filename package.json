@@ -1,0 +1,24 @@
+{
+  "name": "appsync-graphql-nodejs-serverless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^1.51.0",
+    "serverless-appsync-offline": "^1.3.3",
+    "serverless-appsync-plugin": "^1.1.2",
+    "serverless-dynamodb-local": "^0.2.38",
+    "serverless-offline": "^5.10.1",
+    "serverless-prune-plugin": "^1.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kvr2277/appsync-graphql-nodejs-serverless.git"
+  },
+  "scripts": {
+    "offline": "export NODE_PATH=\"${PWD}/lambda-functions/layers/vendor/nodejs/node_modules\" && serverless offline start --printOutput --stage local"
+  },
+  "author": "Vinod K",
+  "license": "ISC",
+  "homepage": "readme"
+}

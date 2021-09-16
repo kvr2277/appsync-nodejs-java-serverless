@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GraphqlDemoApplication<graphqldemo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.graphqldemo.GraphqlDemoApplication",
+            "projectName": "graphqldemo",
+            "args": ""
+        }
+    ]
+}
