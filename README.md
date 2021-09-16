@@ -4,8 +4,6 @@
 Read more about setup at https://vin0d.medium.com/serverless-graphql-with-appsync-java-and-nodejs-clients-aa0914c089c8
 
 
---
-
 This is an ongoing exploration of implementing GraphQL with Serverless Appsync
 
 
@@ -125,24 +123,3 @@ ToDo:
 -- Postman websockets - https://blog.postman.com/postman-supports-websocket-apis/
 -- Create lambda based graphql (https://github.com/michalkvasnicak/aws-lambda-graphql/tree/master/packages/chat-example-server,
 https://github.com/michalkvasnicak/aws-lambda-graphql)
-
-
-
-Type safety: The expression of type HashMap needs unchecked conversion to conform to Map<String,Object>
-
-
-```
-"query":  "query listBooks {
-        listBooks(limit: 10) {
-            items{        
-                id
-                title       
-            }
-            nextToken    
-        }    
-    }"
-"variables": ""
-"operationName": "listBooks"
-```
-
-
